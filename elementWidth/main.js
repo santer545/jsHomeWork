@@ -1,10 +1,7 @@
 elementWidthAnimate('element-1', '200', '1000');
-//elementWidthAnimate('element-2', '200', '1000');
 
 
-
-
-
+// Передаем 3 параметра (id элемента, ширина, время анимации)
 function elementWidthAnimate(element, width, time) {
     if (element && width && time) {
         currentElement = document.getElementById(element);
@@ -22,7 +19,7 @@ function elementWidthAnimate(element, width, time) {
     }
 }
 
-
+// функция анимации , основана на requestAnimationFrame(нагуглил :) )
 function animate(options) {
     var start = performance.now();
     requestAnimationFrame(function animate(time) {
