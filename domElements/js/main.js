@@ -20,9 +20,9 @@ var products = [{
     }
 ];
 
-createElementinDom(products);
+createElementInDom(products);
 
-function createElementinDom(arr) {
+function createElementInDom(arr) {
 
     if (arr) {
         for (let i = 0; i < arr.length; i++) {
