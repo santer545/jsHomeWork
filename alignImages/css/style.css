@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+
+.images-list {
+	font-size: 0;
+	list-style-type: none;
+	text-align: center;
+	padding: 100px;
+}
+
+.images-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	text-align: left;
+	height: 450px;
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+}
+
+.images-item--big {
+	width: 500px;
+	height: 600px;
+}
+
+.images-item img {
+	display: block;
+}
+
+.images-item:not(:last-child) {
+	margin-right: 20px;
+}
