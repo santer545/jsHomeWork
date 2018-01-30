@@ -1,4 +1,4 @@
-alignItems('images-item');
+document.addEventListener("load", alignItems('images-item'));
 
 function alignItems(element) {
 	var list = document.getElementsByClassName(element);

@@ -1,0 +1,14 @@
+.sidebar {
+	list-style-type: none;
+	padding: 50px;
+}
+
+.sidebar li {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.sidebar li.active a {
+	color: #ff0000;
+}
