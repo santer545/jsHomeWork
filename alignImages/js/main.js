@@ -11,15 +11,17 @@ function alignItems(element) {
 			imgMarginLeft,
 			imgMarginTop;
 
+
+		// получаем размеры родителя
 		listWidth = list[i].offsetWidth;
 		listHeight = list[i].offsetHeight;
 
-		// получаем дочерний элемент (img)
+		// получаем дочерний элемент (img) и его размеры
 		img = list[i].children[0];
 		imgWidth = img.clientWidth;
 		imgHeight = img.clientHeight;
 
-		// центрируем дочерний элемент, зная его высоту и высоту родителя
+		// центрируем дочерний элемент, зная его размеры и размеры родителя
 		imgMarginLeft = (listWidth - imgWidth) / 2;
 		imgMarginTop = (listHeight - imgHeight) / 2;
 
