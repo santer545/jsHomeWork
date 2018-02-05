@@ -11,7 +11,7 @@ if(flag) {
 function checkItem(element){
     var list = document.getElementsByClassName(element);
 
-    if(list.length) {
+    if(list) {
         for (i = 0; i < list.length; i++) {
             list[i].addEventListener('click', function(e) {
                 this.classList.toggle("active");
@@ -23,7 +23,7 @@ function checkItem(element){
 
 function setActiveElement(element) {
     var list = document.getElementsByClassName(element);
-    if(list.length) {
+    if(list) {
         for (var i = 0; i < list.length; i++) {
           list[i].addEventListener("click", function() {
             var currentElement = document.getElementsByClassName("active");
