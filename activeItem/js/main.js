@@ -1,5 +1,3 @@
-
-
 var flag = true;
 
 if(flag) {
@@ -17,12 +15,12 @@ function checkItem(element){
                 this.classList.toggle("active");
             });
         }    
-    }
-    
+    }    
 }
 
 function setActiveElement(element) {
     var list = document.getElementsByClassName(element);
+    
     if(list) {
         for (var i = 0; i < list.length; i++) {
           list[i].addEventListener("click", function() {
