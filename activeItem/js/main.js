@@ -5,7 +5,6 @@ var flag = true;
 if(flag) {
     checkItem('sidebar-item');     
 } else {
-    console.log('!!!');
     setActiveElement('sidebar-item');    
 }
 
@@ -32,8 +31,7 @@ function setActiveElement(element) {
             this.className += " active";
           });
         }    
-    }
-        
+    } 
 }
 
 
