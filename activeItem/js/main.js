@@ -33,15 +33,3 @@ function setActiveElement(element) {
         }    
     } 
 }
-
-
-
-/*function activeItem(element) {
-	var list = document.getElementsByClassName(element);
-	for(i = 0; i <= list.length - 1; i++) {
-		list[i].addEventListener('click', function(e) {
-			list[i].classList.remove("active");
-			this.classList.add("active");
-		});
-	}
-}*/
