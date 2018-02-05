@@ -10,5 +10,6 @@
 }
 
 .sidebar li.active a {
-	color: #ff0000;
+	color: #fff;
+	background-color: #ff0000;
 }
