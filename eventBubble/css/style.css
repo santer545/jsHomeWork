@@ -1,0 +1,25 @@
+.sidebar {
+	list-style-type: none;
+	padding: 0;
+	margin: 50px;
+}
+
+.sidebar__item {
+	float: left;
+}
+
+.sidebar__link {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 5px 10px;
+}
+
+.sidebar__link:hover {
+	text-decoration: underline;
+}
+
+.sidebar__item.active .sidebar__link {
+	color: #fff;
+	background-color: #ff0000;
+}

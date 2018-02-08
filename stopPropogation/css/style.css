@@ -1,0 +1,11 @@
+#sidebar {
+	list-style-type: none;
+	padding: 100px;
+	margin: 100px;
+	background-color: #ff0000;
+}
+
+.sidebar__item {
+	font-size: 20px;
+	color: #fff;
+}
