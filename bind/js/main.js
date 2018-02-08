@@ -1,14 +1,14 @@
-function bind(func, context) {
+function myBind(func, context) {
   return function() {
     return func.apply(context, arguments);
   };
 }
 
-var user = {
-  firstName: "Вася",
+var connectObject = {
+  option: 'Hello world',
   sayHi: function() {
-    alert( this.firstName );
+    console.log(this.option);
   }
 };
 
-setTimeout(bind(user.sayHi, user), 1000);
+setTimeout(myBind(connectObject.sayHi, connectObject), 1000);
