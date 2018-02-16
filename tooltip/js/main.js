@@ -2,14 +2,23 @@ $(function() {
   var tooltip  = $('<div class="tooltip">');
   $('body').append(tooltip);
   var link = $('a[title]');
+  var tooltipText = link.attr('title');
 
   link.mouseenter(function(e) {
-    var tooltipText = $(this).attr('title');
-    tooltip.text(tooltipText).show();
+    // Убираем стандартный title
+    var title = $(this).attr("title");
+    $(this).attr("tmp_title", title);
+    $(this).attr("title","");
+    tooltip.text(title).show();
+
   });
 
   link.mouseout(function(e) {
     tooltip.hide();
+    var title = $(this).attr("tmp_title");
+
+    // Возвращаем title на место
+    $(this).attr("title", title);
   });
 
   link.mousemove(function(e) {
