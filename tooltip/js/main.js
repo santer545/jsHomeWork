@@ -2,7 +2,6 @@ $(function() {
   var tooltip  = $('<div class="tooltip">');
   $('body').append(tooltip);
   var link = $('a[title]');
-  var tooltipText = link.attr('title');
 
   link.mouseenter(function(e) {
     // Убираем стандартный title , записываем его значение во временный атрибут
