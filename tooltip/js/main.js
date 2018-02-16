@@ -19,6 +19,7 @@ $(function() {
 
     // Возвращаем title на место
     $(this).attr("title", title);
+    $(this).removeAttr('tmp_title');
   });
 
   link.mousemove(function(e) {
