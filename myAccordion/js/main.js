@@ -13,8 +13,6 @@ $(function() {
       if($(this).parents().length >= depth && this !== subItem.get(0)) {
         return true;
       }
-      console.log("Что это, " + this);
-      console.log("И это " + subItem.get(0));
     });
 
     if($(e.target).is('.accordion-button')) {
