@@ -5,7 +5,7 @@ $(function() {
 
   accordion.click(function(e) {
     var button = e.target;
-    var subItem = $(button).siblings('ul');
+    var subItem = $(button).next();
     var depth = $(subItem).parents().length;
 
 
@@ -15,9 +15,11 @@ $(function() {
       }
     });
 
-    $(allAtDepth).slideUp("fast");
+    if($(e.target).is('.accordion-button')) {
+      $(allAtDepth).slideUp("fast");
 
-    //slideToggle для скрыть/показать текущий контент
-    subItem.slideToggle("fast");
+      //slideToggle для скрыть/показать текущий контент
+      subItem.slideToggle("fast");
+    }
   });
 });
