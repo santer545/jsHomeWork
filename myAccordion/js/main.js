@@ -9,10 +9,12 @@ $(function() {
     var depth = $(subItem).parents().length;
 
 
-    var allAtDepth = $("#accordion ul").filter(function() {
+    var allAtDepth = $(allChildren).filter(function() {
       if($(this).parents().length >= depth && this !== subItem.get(0)) {
         return true;
       }
+      console.log("Что это, " + this);
+      console.log("И это " + subItem.get(0));
     });
 
     if($(e.target).is('.accordion-button')) {
